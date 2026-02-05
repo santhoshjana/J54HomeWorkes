@@ -3,10 +3,10 @@ class BiggestNumber{
 	int num1 = 75;
 	int num2 = 25;
 	if(num1>num2){
-		System.out.println("This is biggest number:" + num1);
+		System.out.println("This is biggest number : " + num1);
 	}
 	else{
-		System.out.println("This is biggest number " + num2);
+		System.out.println("This is biggest number : " + num2);
 	}
 	}
 }
