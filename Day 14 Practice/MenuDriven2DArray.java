@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class MenuDriven2DArray 
+{
+    public static void main(String[] args) 
+	{
+        Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the row value:");
+		int r = sc.nextInt();
+		System.out.print("Enter the Column value:");
+		int c = sc.nextInt();
+		int choice;
+		
+		String arr[][] = new String[r][c];
+		do
+		{
+			System.out.println("-----Manu-----");
+			System.out.println("1.Insert");
+			System.out.println("2.Display");
+			System.out.println("3.Exit");
+			choice = sc.nextInt();
+			switch(choice)
+			{
+				case 1:
+					sc.nextLine();				
+				for (int i = 0; i < arr.length; i++) {
+					for (int j = 0; j < arr[i].length; j++) {
+
+						System.out.print("Enter arr[" + i + "][" + j + "] : ");
+						arr[i][j] = sc.nextLine();
+        }
+    }
+				break;
+				case 2:
+				for(int i=0;i<arr.length;i++)
+				{
+					 for(int j=0;j<arr[i].length;j++)
+					 {
+						 System.out.print(arr[i][j]);
+					 }
+						 System.out.println();
+						
+				}
+				break;
+				case 3:
+					System.out.println("Exiting...");
+				break;
+				default:
+                    System.out.println("Invalid Choice!");
+			}
+		} while (choice != 3);
+	}	
+}
