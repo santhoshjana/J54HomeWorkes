@@ -5,6 +5,7 @@ class MenuDriven2DArray
     public static void main(String[] args) 
 	{
         Scanner sc = new Scanner(System.in);
+        Scanner se = new Scanner(System.in);
 		System.out.print("Enter the row value:");
 		int r = sc.nextInt();
 		System.out.print("Enter the Column value:");
@@ -22,12 +23,12 @@ class MenuDriven2DArray
 			switch(choice)
 			{
 				case 1:
-					sc.nextLine();				
+									
 				for (int i = 0; i < arr.length; i++) {
 					for (int j = 0; j < arr[i].length; j++) {
 
 						System.out.print("Enter arr[" + i + "][" + j + "] : ");
-						arr[i][j] = sc.nextLine();
+						arr[i][j] = se.nextLine();
         }
     }
 				break;
