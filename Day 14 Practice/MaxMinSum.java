@@ -25,7 +25,7 @@ class MaxMinSum
 			if(arr[j]>max)
 			{
 				max = arr[j];
-			}
+			} 
 		}
 		System.out.println("Maximum value of Array: " + max);
 		

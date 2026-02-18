@@ -97,7 +97,7 @@ class MaxMinSumAvg
                         end--;
                     }
 
-                    System.out.println("Array after reversing:");
+                    System.out.println("Array after reversing: ");
 				for(int i=0; i<arr.length;i++)
 				{
 					System.out.print(arr[i]+" ");
