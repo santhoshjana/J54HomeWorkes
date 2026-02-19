@@ -6,25 +6,30 @@ public class Calculator {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("===== SIMPLE CALCULATOR =====");
+       
+
+        int choice;
+		
+		do
+		{
+			System.out.println("===== SIMPLE CALCULATOR =====");
         System.out.println("1 → Addition");
         System.out.println("2 → Subtraction");
         System.out.println("3 → Multiplication");
         System.out.println("4 → Division");
+        System.out.println("5 → Exit");
 
         System.out.print("Enter your choice: ");
-        int choice = sc.nextInt();
+        choice = sc.nextInt();
 
         System.out.print("Enter first number: ");
         double num1 = sc.nextDouble();
 
         System.out.print("Enter second number: ");
         double num2 = sc.nextDouble();
-
-        double result;
-		
-
-        switch (choice) {
+		double result;
+		switch (choice) {
+			 
 
             case 1:
                 result = num1 + num2;
@@ -49,10 +54,14 @@ public class Calculator {
                     System.out.println("Result = " + result);
                 }
                 break;
+			case 5:
+				System.out.println("Exiting...");
 
             default:
                 System.out.println("Invalid choice! Please select between 1 and 4.");
-        }
+        }	
+		}while(choice != 5);
+        
 
         sc.close();
     }
