@@ -6,7 +6,7 @@ public class ExamScoreAnalyzer {
         if (count < arr.length) {
             arr[count] = score;
             count++;
-            System.out.println("Score Added Successfully!");
+            System.out.println("Score Added Successfully!");j
         } else {
             System.out.println("Score list is full!");
         }
