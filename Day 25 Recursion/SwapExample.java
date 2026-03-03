@@ -8,7 +8,7 @@ public class SwapExample {
 
     public static void main(String[] args) {
 
-        int[] numbers = {10, 20};  // storing a and b in array
+        int[] numbers = {10, 20};  
 
         swap(numbers);
 
