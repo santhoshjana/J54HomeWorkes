@@ -18,7 +18,7 @@ class MergeSort {
         return arr;
     }
 
-    // Recursive Divide
+    
     int[] divide(int[] arr) {
 
         if (arr.length <= 1) {
@@ -33,7 +33,7 @@ class MergeSort {
         return conquer(left, right);
     }
 
-    // Merge
+    
     int[] conquer(int[] left, int[] right) {
 
         int i = 0, j = 0, k = 0;

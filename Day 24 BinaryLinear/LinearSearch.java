@@ -29,7 +29,5 @@ public class LinearSearch {
         }
 
         System.out.println("Index: " + index);
-
-        sc.close();
     }
 }
